@@ -1,9 +1,9 @@
 function openNav() {
-    document.getElementById("sidenav").style.width = "200px";
-    document.getElementById("main").style.marginLeft = "200px";
+    $("#sidenav").css("width", "200px");
+    $("#main").css("margin-left", "200px");
 }
 
 function closeNav() {
-    document.getElementById("sidenav").style.width = "0";
-    document.getElementById("main").style.marginLeft = "0";
+    $("#sidenav").css("width", "0");
+    $("#main").css("margin-left", "0");
 }
