@@ -4,13 +4,14 @@
 		<title>Cornelia Chow</title>
         <meta name="viewport" content="width=device-width">
 		<link rel="stylesheet" type="text/css" href="./css/index.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script type="text/javascript" src="index.js"></script>
 	</head>
 	<body>
         <!-- Navigation -->
         <div id="sidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="javascript:void(0)" class="nav-close-btn" onclick="closeNav()">&times;</a>
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
             <a href="#">Resume</a>
@@ -18,16 +19,25 @@
             <a href="photography.html">Photography</a>
             <a href="store.html">Store</a>
         </div>
-        <span onclick = "openNav()">menu</span>
-		<div id="main">
-            
 
-            <div id="header">
-            </div>
+        <!-- Navigation open button -->
+        <div style="margin-bottom: 30px">
+            <a href="javascript:void(0)" class="nav-open-btn" onclick="openNav()">&#9776;</a>
+        </div>
+
+		<div id="main">
+            <img id="portrait" src="./img/portrait_leaves.jpg">
+            
+            <div id="rectangle"></div>
+            
 
             <footer>
                 <p>Cornelia Chow, Copyright &copy; 2018</p>
             </footer>
 		</div>
+        <div id="greeting">
+            <h1>C O R N E L I A</h1>
+            <h1>C H O W</h1>
+        </div>
 	</body>
 </html>
