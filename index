@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Cornelia Chow</title>
+        <meta name="viewport" content="width=device-width">
+		<link rel="stylesheet" type="text/css" href="./css/index.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script type="text/javascript" src="index.js"></script>
+	</head>
+	<body>
+        <!-- Navigation -->
+        <div id="sidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Resume</a>
+            <a href="#">Blog</a>
+            <a href="#">Photography</a>
+            <a href="#">Store</a>
+        </div>
+        <span onclick = "openNav()">menu</span>
+		<div id="main">
+            
+
+            <div id="header">
+            </div>
+
+            <footer>
+                <p>Cornelia Chow, Copyright &copy; 2018</p>
+            </footer>
+		</div>
+	</body>
+</html>
