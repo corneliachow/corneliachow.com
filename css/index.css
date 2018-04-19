@@ -1,52 +1,5 @@
 html {
-    background-color: #efefef;
-}
-
-.sidenav {
-    height:100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #c0c0c0;
-    overflow-x: hidden;
-    padding-top: 40px;
-    transition: 0.5s;
-}
-
-.sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 20px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-}
-
-.sidenav a:hover {
-    color: #fff;
-}
-
-.sidenav .nav-close-btn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 20px;
-}
-
-.nav-open-btn {
-    position: absolute;
-    top: 0;
-    color: #818181;
-    font-size: 30px;
-    text-decoration: none;
-}
-
-@media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
+    background-color: #fafafa;
 }
 
 #main {
@@ -58,31 +11,13 @@ html {
     align-content: center;
 }
 
-
-#portrait {
-    width: 750px;
-    position: absolute;
-    left: 90px;
-    top: 60px;
-}
-
-#rectangle {
-    background-color: #cedae5;
-    width: 900px;
-    height: 900px;
-    left: 50px;
-    overflow: hidden;
-    position: relative;
-    z-index: -1;
-}
-
-#greeting {
+/*#greeting {
     font-family: 'Montserrat', sans-serif;
     position: absolute;
     top: 516px;
     left: 368px;
     white-space: nowrap;
-}
+}*/
 
 h1 {
     font-size: 100px;
@@ -92,4 +27,46 @@ h1 {
 footer {
     position: absolute;
     bottom: 0;
+}
+
+
+/* progress scroll border */
+.border-top,
+.border-bottom {
+  position: fixed;
+  height: 8px;
+  background-color: #cedae5;
+  z-index: 900;
+  width: 0%;
+  /*box-shadow: 0 2px 30px 0 rgba(0, 0, 0, 0.18);*/
+}
+
+.border-right,
+.border-left {
+  position: fixed;
+  width: 8px;
+  background-color: #cedae5;
+  z-index: 900;
+  height: 0%;
+  /*box-shadow: 0 2px 30px 0 rgba(0, 0, 0, 0.18);*/
+}
+
+.border-top {
+  top: 0;
+  left: 0;
+}
+
+.border-right {
+  top: 0;
+  right: 0;
+}
+
+.border-bottom {
+  bottom: 0;
+  right: 0;
+}
+
+.border-left {
+  bottom: 0;
+  left: 0;
 }
