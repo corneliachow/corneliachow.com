@@ -23,24 +23,27 @@ $(document).on("scroll", function () {
   $("div.border-left").css("height", 100 * borderleft + "%");
 })
 
+
 function navOpen() {
   var nav = document.getElementById("nav");
-  var navOpen = document.getElementById("navOpen");
-  var navClose = document.getElementById("navClose");
+  var navOpenBtn = document.getElementById("navOpenBtn");
+  var navCloseBtn = document.getElementById("navCloseBtn");
+  var smallWindow = window.matchMedia("(max-width: 600px)");
   if (nav.className === "nav unselectable") {
       nav.className += " nav-open";
-      navOpen.style.display = "none";
-      navClose.style.display = "block";
+      navOpenBtn.style.display = "none";
+      navCloseBtn.style.display = "block";
   }
 }
 
 function navClose() {
   var nav = document.getElementById("nav");
-  var navOpen = document.getElementById("navOpen");
-  var navClose = document.getElementById("navClose");
+  var navOpenBtn = document.getElementById("navOpenBtn");
+  var navCloseBtn = document.getElementById("navCloseBtn");
+  var smallWindow = window.matchMedia("(max-width: 600px)");
   if (nav.className != "nav unselectable") {
     nav.className = "nav unselectable";
-    navOpen.style.display = "block";
-    navClose.style.display = "none";
+    navCloseBtn.style.display = "none";
+    navOpenBtn.style.display = "block";
   }
 }
