@@ -13,7 +13,7 @@ html {
 
 a:-webkit-any-link {
   color: inherit;
-  cursor: pointer;
+  cursor: pointer; 
   text-decoration: none;
 }
 
@@ -47,16 +47,15 @@ a:-webkit-any-link {
 .nav a:hover {
   color: #8DC8EC;
 }
-.nav a:active, div a:nth-child(3){
+.nav a:active {
   color: #000;
-  pointer-events: none;
 }
 .navOpenBtn,
 .navCloseBtn {
   display: none;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .nav {
     float: right;
   }
