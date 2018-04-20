@@ -1,4 +1,3 @@
-
 // progress scroll border
 $(document).on("scroll", function () {
   // total border length
@@ -23,3 +22,25 @@ $(document).on("scroll", function () {
   $("div.border-bottom").css("width",  100 * borderbottom + "%");
   $("div.border-left").css("height", 100 * borderleft + "%");
 })
+
+function navOpen() {
+  var nav = document.getElementById("nav");
+  var navOpen = document.getElementById("navOpen");
+  var navClose = document.getElementById("navClose");
+  if (nav.className === "nav unselectable") {
+      nav.className += " nav-open";
+      navOpen.style.display = "none";
+      navClose.style.display = "block";
+  }
+}
+
+function navClose() {
+  var nav = document.getElementById("nav");
+  var navOpen = document.getElementById("navOpen");
+  var navClose = document.getElementById("navClose");
+  if (nav.className != "nav unselectable") {
+    nav.className = "nav unselectable";
+    navOpen.style.display = "block";
+    navClose.style.display = "none";
+  }
+}

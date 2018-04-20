@@ -1,32 +1,107 @@
 html {
-    background-color: #fafafa;
+  background-color: #fafafa;
 }
 
-#main {
-    transition: margin-left .5s;
-    padding: 20px 0 0 100px;
-    height: 900px;
-    overflow: hidden;
-    position: relative;
-    align-content: center;
+.header {
+  display: flex;
+  justify-content: space-between;
 }
 
-/*#greeting {
-    font-family: 'Montserrat', sans-serif;
-    position: absolute;
-    top: 516px;
-    left: 368px;
-    white-space: nowrap;
+/*#main {
+  transition: margin-left .5s;
+  padding: 20px 0 0 100px;
+  height: 900px;
+  overflow: hidden;
+  position: relative;
+  align-content: center;
+  word-wrap: break-word;
 }*/
 
-h1 {
-    font-size: 100px;
-    line-height: 30px;
+.logo {
+  font-family: 'Raleway', sans-serif;
+  font-size: 30px;
+  text-transform: uppercase;
+  margin: 10px;
 }
 
+.nav {
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  margin: 18px;
+}
+
+.nav a {
+  margin: 0 10px 0 10px;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  color: #8DC8EC;
+}
+
+.nav a:active {
+  color: #999;
+}
+
+.nav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .nav a {
+    display: none;
+  }
+  .nav a.navOpen {
+    float: right;
+    display: block;
+  }
+  .nav a.navClose {
+    float: right;
+    display: none;
+  }
+  .nav.nav-open {
+    position: relative;
+  }
+  .nav.nav-open a:not(:first-child) {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .nav.nav-open a:first-child {
+    float: none;
+    display: block;
+    text-align: right;
+  }
+  .nav.nav-open a.navOpen {
+    position: relative;
+    right: 0;
+    top: 0;
+  }
+  /*.nav.nav-open a.navClose {
+    display: none;
+  }*/
+}
+
+
 footer {
-    position: absolute;
-    bottom: 0;
+  position: absolute;
+  bottom: 0;
+  font-family: 'Raleway', sans-serif;
+}
+
+.unselectable {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+a:-webkit-any-link {
+  color: inherit;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 
@@ -35,20 +110,18 @@ footer {
 .border-bottom {
   position: fixed;
   height: 8px;
-  background-color: #cedae5;
+  background-color: #8DC8EC;
   z-index: 900;
   width: 0%;
-  /*box-shadow: 0 2px 30px 0 rgba(0, 0, 0, 0.18);*/
 }
 
 .border-right,
 .border-left {
   position: fixed;
   width: 8px;
-  background-color: #cedae5;
+  background-color: #8DC8EC;
   z-index: 900;
   height: 0%;
-  /*box-shadow: 0 2px 30px 0 rgba(0, 0, 0, 0.18);*/
 }
 
 .border-top {
