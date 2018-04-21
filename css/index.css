@@ -108,7 +108,7 @@ a:-webkit-any-link {
 }
 
 footer {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   width: 100%;
   color: #d2d2d2;
