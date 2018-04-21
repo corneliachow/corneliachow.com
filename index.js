@@ -23,12 +23,18 @@ $(document).on("scroll", function () {
   $("div.border-left").css("height", 100 * borderleft + "%");
 })
 
+// $(window).resize(function() {
+//   var bigWindow = window.matchMedia("(min-width: 800px)");
+//   if (bigWindow.matches) {
+//     navOpenBtn.style.display = "none";
+//     navCloseBtn.style.display = "none";
+//   }
+// })
 
 function navOpen() {
   var nav = document.getElementById("nav");
   var navOpenBtn = document.getElementById("navOpenBtn");
   var navCloseBtn = document.getElementById("navCloseBtn");
-  var smallWindow = window.matchMedia("(max-width: 600px)");
   if (nav.className === "nav unselectable") {
       nav.className += " nav-open";
       navOpenBtn.style.display = "none";
@@ -40,7 +46,6 @@ function navClose() {
   var nav = document.getElementById("nav");
   var navOpenBtn = document.getElementById("navOpenBtn");
   var navCloseBtn = document.getElementById("navCloseBtn");
-  var smallWindow = window.matchMedia("(max-width: 600px)");
   if (nav.className != "nav unselectable") {
     nav.className = "nav unselectable";
     navCloseBtn.style.display = "none";
