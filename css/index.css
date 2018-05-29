@@ -108,14 +108,9 @@ a:-webkit-any-link {
 }
 
 .social {
-  width: 30px;
-  height: 30px;
-  margin: 10px;
-  filter: grayscale(100%) contrast(10);
-}
-
-.social:hover {
-  filter: none;
+  width: 50px;
+  height: 50px;
+  margin: 20px;
 }
 
 #footer {
