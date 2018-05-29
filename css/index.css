@@ -114,7 +114,7 @@ a:-webkit-any-link {
 }
 
 #footer {
-  positon: absolute;
+  position: absolute;
   bottom: 8px;
   width: 100%;
   color: #d2d2d2;
