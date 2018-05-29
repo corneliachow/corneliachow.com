@@ -36,7 +36,7 @@ a:-webkit-any-link {
 }
 
 .logo {
-  font-family: 'Frontage-Regular', sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-size: 30px;
   text-transform: uppercase;
   margin: 20px 0 0 30px;
@@ -111,6 +111,11 @@ a:-webkit-any-link {
   width: 30px;
   height: 30px;
   margin: 10px;
+  filter: grayscale(100%) contrast(10);
+}
+
+.social:hover {
+  filter: none;
 }
 
 #footer {
