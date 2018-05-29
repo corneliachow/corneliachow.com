@@ -10,7 +10,7 @@ body {
 @font-face {
   font-family: "Frontage Regular";
   src: url("css/fonts/Frontage-Regular.eot");
-  src: url("css/fonts/Frontage-Regular.otf") format("opentype"),
+  src: url("css/fonts/Frontage-Regular.otf") format("opentype");
 }
 
 .unselectable {
