@@ -31,21 +31,28 @@ a:-webkit-any-link {
 .header {
   display: flex;
   justify-content: space-between;
-  margin: 20px;
-  /*position: fixed;*/
+  /* margin: 20px; */
+  /* position: fixed; */
 }
 
 .logo {
-  font-family: 'Raleway', sans-serif;
-  font-size: 30px;
-  text-transform: uppercase;
-  margin: 20px 0 0 30px;
+  box-sizing: border-box;
+  font-family: 'Martel', serif;
+  font-size: 50px;
+  /* text-transform: uppercase; */
+  /* font-weight: 900; */
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 10px;
+  line-height: 1.2em;
+  color: #aaaaaa
 }
 
 /* navigation start */
-.nav {
+/* .nav {
   margin: 30px 20px 0px 0px;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Martel', serif;
   font-size: 18px;
   color: #7f7f7f;
 }
@@ -54,7 +61,7 @@ a:-webkit-any-link {
   text-decoration: none;
 }
 .nav a:hover {
-  color: #6FB3DD;
+  color: #FFF8AD;
 }
 .navOpenBtn,
 .navCloseBtn {
@@ -90,17 +97,28 @@ a:-webkit-any-link {
     right: 0;
     top: 0;
   }
-}
+} */
 /* navigation end */
 
-#intro {
-  margin: 100px;
-  max-width: 800px;
-  font-family: 'Lora', serif;
-  font-size: 35px;
+.column-right {
+  position: absolute;
+  left: 600px;
+  top: 350px;
 }
-#intro a {
-  color: #6FB3DD;
+
+.body-content {
+  display: flex;
+  left: 0;
+  top: 80px;
+  margin: 10px 0 0 2px;
+  max-width: 500px;
+  font-family: 'Martel', serif;
+  font-weight: 900;
+  font-size: 50px;
+  line-height: 1.2em;
+}
+.body-content a {
+  color: #aaaaaa;
 }
 
 #connects {
@@ -114,11 +132,11 @@ a:-webkit-any-link {
 }
 
 #footer {
-  position: absolute;
+  position: fixed;
   bottom: 8px;
   width: 100%;
   color: #d2d2d2;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Martel', serif;
   font-size: 12px;
 }
 
@@ -128,7 +146,7 @@ a:-webkit-any-link {
 .border-bottom {
   position: fixed;
   height: 8px;
-  background-color: #6FB3DD;
+  background-color: #aaaaaa;
   z-index: 900;
   width: 0%;
 }
@@ -137,7 +155,7 @@ a:-webkit-any-link {
 .border-left {
   position: fixed;
   width: 8px;
-  background-color: #6FB3DD;
+  background-color: #aaaaaa;
   z-index: 900;
   height: 0%;
 }
