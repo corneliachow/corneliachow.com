@@ -5,6 +5,7 @@ html {
 body {
   height: 100vh;
   width: 100vw;
+  overflow-x: hidden;
 }
 
 p {
@@ -32,15 +33,15 @@ a:-webkit-any-link {
   text-decoration: none;
 }
 
-.header {
+.container {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
 }
 
 .logo {
   box-sizing: border-box;
   font-family: 'Martel', serif;
-  font-size: 50px;
+  font-size: 35px;
   font-style: italic;
   font-weight: 400;
   position: fixed;
@@ -55,55 +56,92 @@ a:-webkit-any-link {
 }
 
 #intro {
-  position: fixed;
-  margin: 10px;
-  top: 55px;
-  width: 40%;
-  max-width: 500px;
-}
-
-.column-right {
-  position: absolute;
-  left: 50%;
-  top: 350px;
-  width: 40%;
-  max-width: 510px;
+  padding-top: 40px;
 }
 
 .body-content {
-  display: flex;
-  top: 80px;
-  margin: 10px 0 0 2px;
+  margin-left: 6px;
   font-family: 'Martel', serif;
   font-weight: 900;
-  font-size: 50px;
+  font-size: 35px;
   line-height: 1.2em;
+  width: calc(100% - 16px);
 }
+
 .body-content a {
   font-weight: 400;
   font-style: italic;
 }
-.body-content a:hover {
-  font-style: normal;
+
+.column-right {
+  position: relative;
 }
 
 .social {
-  position: fixed;
-  right: 0;
-  top: 0;
-  margin: 10px;
-  height: 100%;
+  box-sizing: border-box;
+  line-height: 1.2em;
+  margin: 0 0 0 6px;
+  padding-bottom: 50px;
   font-family: 'Martel', serif;
   font-weight: 400;
-  font-size: 50px;
-  writing-mode: vertical-rl;
-  text-orientation: mixed;
+  font-size: 35px;
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
 }
 
-.social a:hover {
-  font-style: italic;
+@media only screen and (min-width: 376px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .logo {
+    font-size: 50px;
+  }
+
+  #intro {
+    position: fixed;
+    margin: 10px;
+    padding-top: 0;
+    top: 55px;
+    width: 40%;
+    max-width: 500px;
+  }
+
+  .column-right {
+    position: absolute;
+    left: 50%;
+    top: 350px;
+    width: 40%;
+    max-width: 510px;
+  }
+
+  .body-content {
+    top: 80px;
+    margin: 10px 0 0 2px;
+    font-size: 50px;
+  }
+
+  .body-content a:hover {
+    font-style: normal;
+  }
+
+  .social {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: fixed;
+    right: 0;
+    top: 0;
+    margin: 10px;
+    height: 100%;
+    font-size: 50px;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+  }
+
+  .social a:hover {
+    font-style: italic;
+  }
 }
 
 #footer {
